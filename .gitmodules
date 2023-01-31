@@ -1,0 +1,3 @@
+[submodule "Cohere/bing-chilling"]
+	path = Cohere/bing-chilling
+	url = https://github.com/borsym/bing-chilling.git

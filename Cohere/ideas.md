@@ -22,3 +22,7 @@ Using Semantic similarity to create a platform for starter plant growers. Could 
 ## Gen Gap
 
 Train an NLP to translate text between generations. Etc. you want to write to your grandma in a slang way.
+
+## Game Comment (Zsolti)
+
+## Grammarly for Tinder
