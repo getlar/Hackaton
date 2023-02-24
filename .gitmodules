@@ -1,3 +1,7 @@
 [submodule "Cohere/bing-chilling"]
 	path = Cohere/bing-chilling
 	url = https://github.com/borsym/bing-chilling.git
+
+[submodule "Startup/scrummy"]
+	path = Startup/scrummy
+	url = https://github.com/CuriousPercibal/scrummy.git
