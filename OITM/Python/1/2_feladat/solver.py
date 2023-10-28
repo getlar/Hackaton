@@ -67,7 +67,7 @@ def main() -> str:
 
     df_swapped = df_roads.copy()
     df_swapped['start'], df_swapped['dest'] = df_roads['dest'], df_roads['start']
-    df_swapped = df_swapped.iloc[3:]
+    #df_swapped = df_swapped.iloc[3:]
     df_bidirectional = pd.concat([df_roads, df_swapped])
 
     root = build_tree(df_beers, df_bidirectional, "FL", 24)
