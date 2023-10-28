@@ -32,30 +32,31 @@ total_prices = sorted_df.groupby('store')['price'].sum().reset_index()
 total_prices = total_prices.sort_values(by='price', ascending=False)
 
 print(total_prices)
-from itertools import combinations
 
-store_combinations = list(combinations(total_prices['store'], 2))
+print('-------------------')
 
-# Calculate the cost for each combination
-best_stores = None
-min_cost = float('inf')
+unique_stores = sorted_df['store'].unique()
 
-for combination in store_combinations:
-    cost = total_prices.loc[total_prices['store'].isin(combination)]['price'].sum()
-    if cost < min_cost:
-        min_cost = cost
-        best_stores = combination
+best_price = {}
 
-print(best_stores)
-print(min_cost)
 
-print(1983*2 + 62 * 10 + 92 + 87 * 100 + 155*48)
-print(1982*2 + 62 * 10 + 85 + 87 * 100 + 153*48)
+for i in range(len(unique_stores)):
+    for j in range(i+1, len(unique_stores)):
+        store1 = unique_stores[i]
+        store2 = unique_stores[j]
 
-print(2010*2 + 81 * 10 + 86 + 87 * 100 + 134*48)
+        store1_df = sorted_df.loc[sorted_df['store'] == store1]
+        store2_df = sorted_df.loc[sorted_df['store'] == store2]
 
-print(2010*2 + 79 * 10 + 92 + 87 * 100 + 132*48)
+        merged_df = pd.merge(store1_df, store2_df, on='ingredient')
+        tmp_price = 0
+        for index, row in merged_df.iterrows():
+            if row['price_x'] > row['price_y']:
+                tmp_price += row['price_y']
+            else:
+                tmp_price += row['price_x']
 
-print(2000*2 + 70 * 10 + 92 + 87 * 100 + 150*48)
-print(1983*2 + 62 * 10 + 86 + 90 * 100 + 134*48)
-print(1982*2 + 62 * 10 + 85 + 92 * 100 + 134*48)
+        best_price[(store1, store2)] = tmp_price
+
+for key, value in sorted(best_price.items(), key=lambda item: item[1], reverse=True):
+    print(key, value)
