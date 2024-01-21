@@ -1,0 +1,3 @@
+## Storage
+
+In Kubernetes, the term "storage" relates to the management and accessibility of data within the cluster. Persistent Volumes (PVs) and Persistent Volume Claims (PVCs) decouple storage provisioning from pod specification, enabling dynamic allocation of volumes. Storage Classes define storage requirements and properties, ensuring proper volume provisioning. StatefulSets and Deployments allow applications to use and maintain persistent storage volumes, making it suitable for stateful workloads such as databases.

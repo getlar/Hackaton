@@ -1,3 +1,3 @@
 ## Quick Links
 
-https://tutorialsdojo.com/aws-vs-azure-services-comparison/
+https://tutorialsdojo.com/aws-cheat-sheets/
