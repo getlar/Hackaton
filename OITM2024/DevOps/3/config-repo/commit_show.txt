@@ -1,0 +1,130 @@
+commit d6365aced4aae1241c03a7de6f98e273e62e3d4a
+Author: Megmerettetes DevOps user <devops@megmerettetes.hu>
+Date:   Thu Aug 17 02:34:54 2023 +0200
+
+    externalize xonfig in prod
+
+diff --git a/application-prod.yml b/application-prod.yml
+new file mode 100644
+index 00000000..34c0a296
+--- /dev/null
++++ b/application-prod.yml
+@@ -0,0 +1,27 @@
++SERVER_PORT: 8080
++MYSQL_URL: mysql.devops.megmerettetes.hu:3306
++MYSQL_USERNAME: qsalbgsauw
++MYSQL_PASSWORD: "{enc}jqqTXI31ZJGO7FbuhLzYQe0MtXLtMftdtQtsQAun6imkrH91E5a9zJnFwDIsyRyq"
++CONNECTION_POOL_MIN_IDLE: 5
++CONNECTION_POOL_MAX_SIZE: 24
++CONNECTION_POOL_IDLE: 180000
++CONNECTION_POOL_MAX_LIFE: 1170000
++MAX_REQUEST_FILE_SIZE: 9MB
++MAX_REQUEST_SIZE: 46MB
++RECAPTCHA_SITE_KEY: 6j8q2X5cEd6I27Avn1yHpe8ZksnQA8qfXLqJCohM
++RECAPTCHA_SECRET_KEY: "{enc}IzC0jesu2qRGn7gs1KqvEy7nOJyr0P8BiKmIbhkuycZHWs4jXUrgGjsMpt2fjIAF"
++SMTP_URL: mail.devops.megmerettetes.hu:587
++SMTP_USERNAME: rbquwkulcatp
++SMTP_PASSWORD: "{enc}u29geO1wkt7ojnU3dUyGfLIC8yw2xsTcFG7e9NDNtiXMl2VLFOYG8yewuNjNlIwy"
++WEATHER_URL: https://api.weatherapi.com/v1
++WEATHER_API_KEY: "{enc}wz0BEfegzdKeiytpn84K1l1Lo0KRlr9e1Focp6wTVOWfRtNYHtpUWPRgU8nqLMsi"
++LOCALAZY_URL: https://api.localazy.com
++LOCALAZY_API_KEY: "{enc}cknbISCd9NKl2eyJ6Bc9LRPR8sEYcTr2j7tyA41FceV9pDDxq1FQW9pWTedCsd0T"
++FIXER_URL: https://data.fixer.io/api/
++FIXER_API_KEY: "{enc}3AKO9qnH3D7R78UhvX2lDxRH9m6sRLll7uYVexcwHhAxVLJCgF0PMnClhGiWyMyN"
++ELASTICSEARCH_URL: elasticsearch.devops.megmerettetes.hu:9200
++ELASTICSEARCH_USERNAME: kwqkovhuluuqbcpj
++ELASTICSEARCH_PASSWORD: enc2DQMx9fVd0loTQMzhdDKeMXdq2hhmQV0l3hGLJBAnt0Pz3fZfN2EpqdodLlQMmMx
++HAZELCAST_URL: hazelcast.devops.megmerettetes.hu:5701
++HAZELCAST_USERNAME: agcmplecfegm
++HAZELCAST_PASSWORD: "{enc}gExJPWce9YyjU4bsrkD8gYgYhQf1LpDyYTggr3OR2Qc8AngG9Uc1quyVqAhZcQFd"
+diff --git a/application.yml b/application.yml
+index 0f485748..1d046915 100644
+--- a/application.yml
++++ b/application.yml
+@@ -1,16 +1,16 @@
+ server:
+-  port: 8080
++  port: ${SERVER_PORT}
+ spring:
+   datasource:
+     driver-class-name: com.mysql.cj.jdbc.Driver
+-    url: jdbc:mysql://mysql.devops.megmerettetes.hu:3306/megmerettetes-devops-2024?characterEncoding=UTF-8&serverTimezone=Europe/Budapest
+-    username: qsalbgsauw
+-    password: "{enc}jqqTXI31ZJGO7FbuhLzYQe0MtXLtMftdtQtsQAun6imkrH91E5a9zJnFwDIsyRyq"
++    url: jdbc:mysql://${MYSQL_URL}/megmerettetes-devops-2024?characterEncoding=UTF-8&serverTimezone=Europe/Budapest
++    username: ${MYSQL_USERNAME}
++    password: ${MYSQL_PASSWORD}
+     hikari:
+-      minimum-idle: 5
+-      maximum-pool-size: 24
+-      idle-timeout: 180000
+-      max-lifetime: 1170000
++      minimum-idle: ${CONNECTION_POOL_MIN_IDLE}
++      maximum-pool-size: ${CONNECTION_POOL_MAX_SIZE}
++      idle-timeout: ${CONNECTION_POOL_IDLE}
++      max-lifetime: ${CONNECTION_POOL_MAX_LIFE}
+       auto-commit: false
+       catalog: megmerettetes-devops-2024
+       connection-test-query: SELECT 1
+@@ -24,15 +24,15 @@ spring:
+         format_sql: false
+   servlet:
+     multipart:
+-      max-file-size: 9MB
+-      max-request-size: 46MB
++      max-file-size: ${MAX_REQUEST_FILE_SIZE}
++      max-request-size: ${MAX_REQUEST_SIZE}
+ fixer:
+-  url: https://data.fixer.io/api/
+-  api-key: "{enc}3AKO9qnH3D7R78UhvX2lDxRH9m6sRLll7uYVexcwHhAxVLJCgF0PMnClhGiWyMyN"
++  url: ${FIXER_URL}
++  api-key: ${FIXER_API_KEY}
+ recaptcha:
+   key:
+-    site: 6j8q2X5cEd6I27Avn1yHpe8ZksnQA8qfXLqJCohM
+-    secret: "{enc}IzC0jesu2qRGn7gs1KqvEy7nOJyr0P8BiKmIbhkuycZHWs4jXUrgGjsMpt2fjIAF"
++    site: ${RECAPTCHA_SITE_KEY}
++    secret: ${RECAPTCHA_SECRET_KEY}
+ logging:
+   path: /var/log/megmerettetes-2024/
+   level:
+@@ -45,26 +45,26 @@ logging:
+     hu.megmerettetes.devops: INFO
+     org.springframework: TRACE
+ weather:
+-  url: https://api.weatherapi.com/v1
+-  api-key: "{enc}wz0BEfegzdKeiytpn84K1l1Lo0KRlr9e1Focp6wTVOWfRtNYHtpUWPRgU8nqLMsi"
++  url: ${WEATHER_URL}
++  api-key: ${WEATHER_API_KEY}
+ liquibase:
+   enabled: true
+   change-log: classpath:/db/changelog/db.changelog-master.yaml
+ localazy:
+-  url: https://api.weatherapi.com/v1
+-  api-key: "{enc}cknbISCd9NKl2eyJ6Bc9LRPR8sEYcTr2j7tyA41FceV9pDDxq1FQW9pWTedCsd0T"
++  url: ${LOCALAZY_URL}
++  api-key: ${LOCALAZY_API_KEY}
+ elasticsearch:
+-  url: elasticsearch.devops.megmerettetes.hu:9200
+-  username: kwqkovhuluuqbcpj
+-  password: enc2DQMx9fVd0loTQMzhdDKeMXdq2hhmQV0l3hGLJBAnt0Pz3fZfN2EpqdodLlQMmMx
++  url: ${ELASTICSEARCH_URL}
++  username: ${ELASTICSEARCH_USERNAME}
++  password: ${ELASTICSEARCH_PASSWORD}
+ hazelcast:
+-  url: hazelcast.devops.megmerettetes.hu:5701
+-  username: agcmplecfegm
+-  password: "{enc}gExJPWce9YyjU4bsrkD8gYgYhQf1LpDyYTggr3OR2Qc8AngG9Uc1quyVqAhZcQFd"
++  url: ${HAZELCAST_URL}
++  username: ${HAZELCAST_USERNAME}
++  password: ${HAZELCAST_PASSWORD}
+ smtp:
+-  url: mail.devops.megmerettetes.hu:587
+-  username: rbquwkulcatp
+-  password: "{enc}u29geO1wkt7ojnU3dUyGfLIC8yw2xsTcFG7e9NDNtiXMl2VLFOYG8yewuNjNlIwy"
++  url: ${SMTP_URL}
++  username: ${SMTP_USERNAME}
++  password: ${SMTP_PASSWORD}
+   sender:
+     name: Aladár @ Megmérettetés
+     email: aladar@devops.megmerettetes.hu

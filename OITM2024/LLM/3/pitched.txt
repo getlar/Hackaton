@@ -1,0 +1,49 @@
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
+
+Szia! Hallottam, hogy megkaptuk az új eboldal projektjét. Már megtudtam nézni a specifikációt, és van néhány gondolatom a frontendizájról. Mit gondolsz erről az egészről? Szia! Igen, láttam a dokumentációt, úgy tűnik egy viszonylag komplett eboldal lesz az egész.
+
+Tehát kellett elhasználni a szerepfelelés funkcióban. Milyen gondoltál a frontendra? Szia! Összes interaktívelemnek az implementálása. Egyébként a dizájnhoz van egy-két ötlet a felhasználói felület színeivel és gombjaival kapcsolatban.
+
+Azt szeretném, hogy a gombok halványpirosak, az oldal alapszíne pedig szürke legyen. A React szerintem is jó választás. A backend oldalon pedig gondoltam, hogy Node.js-t használjunk az appjéhoz.
+
+Lehet, hogy ezeket készítenek, könnyedesen kommunikálni a frontendrel. A dizájn kérdéseket szerintem még majd később lesz használni, és elbeszélhetjük. Egyébként van már valamilyen navigációra és a struktúrára? Igen, egy egyszerűbb, de intuitív navigációs menüt szeretnék kialakítani.
+
+Az oldal struktúra hierarchikus lenne, az egyes főmenü pontok alá rendezve a kapcsolódó aloldalakat. Gondolkodtam azon, hogy a landing page lenne minimalista, nagy figyelemfelkeltő képekkel és rövid bemutató szövegékkel. Igen, ez jól hangzik. 
+
+Szerintem fontos lenne még az is, hogy az adatát elbeszéljük. Mert több életen használói adatok is kell megpároljunk. Azt gondoltam, hogy használjunk egy relációs adatbázis. 
+
+Milyen adatbázis? Jó lesz mert szerintem az könnyéken rendezve a biztonságot. Azt javaslom, hogy a backend oldalán inkludáljunk egy telesítési rendszer, amely rösszegíti a kírókokat és a szolgáltatásokat. Akkor ebben meg is egyeztünk. 
+
+Még valami, amit érdemes átgondolni? Szerintem csak annyi, hogy figyeljünk a skálászatosságra. Ha akkor egy sikeres lesz, akkor gyorsan kell nagybővíteni és nem lenne jó, ha az alapoktól kéne mindent elépíteni. Ez igaz, teljesen rengeteget értek. 
+
+Kezdjük az alapoktól, és építsünk fel egy stabil rendszer, amit később könnyen átbővíteni. Egyébként gondolkodtam azon, hogy milyen virágdolgokat használjunk a kontentbe lesz, és ezt gondoltam, hogy Webpack vagy Lightrow választás lehet, mert ezek jogalmasak. Igen, szerintem is a Webpack az jó lenne, főleg a figyelmebe vesszük a moduláris felépítést és a responsív dizájnos szükséges eszközöket.
+
+Gondoltam, hogy használhatnánk valami ilyen CSS frameworkot is, mint például TlVinCSS vagy Bootstrap, hogy gyorsabban tudjunk kialakítani a dizájnt. Szerintem a TlVinCSS jó választás lesz, mert könnyen lehet festeszabni, szerintem gyors is. Bekem gondolom, valami automatizálás, de a GitLab-hoz így egy pipeline-es csapattány? Ja, az mindenképpen. 
+
+A GitLab vagy GitHub Actions lehetne jó választás, hogy folyamatosan tudjuk tesztelni és deployolni a változtatásokat. Így a hibákat is hamarra ki tudjuk szőrni, és gőrből könnyebbé válik a fejlesztési folyamat. Ezzel egyetértek. 
+
+Gondoltam már arra, hogy kiként kezeljük az adatvédelmet. Pontos lenne, hogy az orgán megfelelje minden adatvédelmi erdőírását. Ja, ez egy nagyon fontos szempont. 
+
+Szerintem be kellene építeni a frontendbe egy részletes adatvédelmi nyilatkozatot, amit a felhasználók a regisztráció előtt el kell, hogy fogadjanak. Ezen kívül a backend oldalon is figyelni kell a tisztkosításra és az adatok biztonságos tárolására. Igen, ez nagyon fontos. 
+
+A tisztkosítást illetően használhatnánk ezt a kommunikációhoz, és az adatbeállított állatjárszalakat pedig természetesen végig lehessen. És így biztosítva van az adatok biztonsága, akkor is, hogy történik valami. Igen, viszont valamilyen rate limiting megoldást is be kellene építeni, ebben a backendbe, hogy elkerüljük a DDoS támadásokat.
+
+Ezt akár NGINX proxy-val is meg tudnánk oldani, vagy valami, amit esetleg még a fejlesztőcsapat ismer. Tökéletes. És ha már a biztonságnál vagyunk, akkor kérdezem, hogy beszélnünk a monitoring és a logolás megoldásokról.
+
+Használhatnánk Prometheus-t, vagy LKStack-et a logóközeléséhez. Jó ötlet. A Prometheus és az LKStack nagyon jól működnek ebben a projektben.
+
+Így könnyedén tudnánk követni a rendszer állapotát, és gyorsan reagálni, ha valamilyen probléma adódna. Igen, szerintem is. Összességében jól alakulnak a tervek.
+
+Van még valami, amit át kell beszéljünk? Talán még annyi, hogy miként kezeljük a tesztelést. Gondoltam, hogy használhatnánk Jasmine vagy Jest-et a frontend tesztelésére, és Mocha-tól backendhez. Így mindkét oldalon biztosítanánk a kód minőségét.
+
+Igazazan érdemes lennám még a tesztbőlendet alapján megfelelni, és alkalmazni, hogy az elején biztosítjuk, hogy kivalamentes legyen minden. Aztán később kevesebb lesz a gondot találni. Tökéletes. 
+
+Mit is mondtál az alapszínről korábban? Én szürkére gondoltam, de írt a megrendelő emléken, hogy világos két egyszeret, szóval világos egyébként nem is lenne az alapszín. Oké. Akkor hétfőn megbeszélhetjük a következő lépéseket a csapattal, és elkezdhetjük a konkrét fejlesztést.
+
+Nem, nem. Várom a tovább érted. Oké, szuper. 
+
+Jó hétvégét. Neked is. Sziasztok.
+
+Sziasztok.
+
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
