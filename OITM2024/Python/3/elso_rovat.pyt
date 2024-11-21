@@ -1,1 +1,7 @@
-L ï¿½yhï¿½dï¿½ï¿½kz bwhldwï¿½nlv lï¿½wï¿½ ï¿½ykkï¿½ l uï¿½ï¿½sqï¿½d. L bwhldwd ï¿½ï¿½zckyb dybï¿½ï¿½ï¿½uï¿½ nï¿½ ï¿½qj vï¿½qjkï¿½d lï¿½lï¿½ï¿½ bmocnl, fqjï¿½ï¿½hï¿½ bm, rwqj ï¿½svï¿½ï¿½v ï¿½lblï¿½dï¿½b, nï¿½ï¿½ï¿½ï¿½bdhï¿½ l ckxï¿½ykd ï¿½c lk tbmcuï¿½ï¿½ï¿½ï¿½ï¿½d, ï¿½fï¿½yv ï¿½ï¿½kznï¿½ ï¿½ï¿½bfï¿½uyv. ï¿½kï¿½ï¿½ edmv lï¿½ï¿½wccwv ï¿½qj rmï¿½xd, ï¿½ï¿½ï¿½j ï¿½svï¿½ï¿½v ï¿½ï¿½kzd ï¿½ï¿½dlï¿½lb, ï¿½shï¿½hï¿½, l ï¿½yhï¿½dï¿½ï¿½kz bwhldrwk cï¿½qtdcï¿½qfï¿½ lï¿½wdd Hsqï¿½vï¿½bï¿½ bï¿½udhï¿½vj ï¿½ï¿½qwï¿½ï¿½mcmd. Lkwv ï¿½lblï¿½dï¿½bï¿½ï¿½ï¿½d, ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½d l rmï¿½x vï¿½ï¿½ pï¿½ï¿½ ï¿½ï¿½, uï¿½qjï¿½kkï¿½ ï¿½ï¿½. L ï¿½lawdd ï¿½lblï¿½dï¿½bï¿½ï¿½ï¿½d pgkkï¿½ ï¿½qjnï¿½. ï¿½kkï¿½ï¿½ l uï¿½ï¿½sqï¿½hï¿½ï¿½ hmbwï¿½ uï¿½ï¿½ï¿½vdï¿½ï¿½kï¿½cï¿½d!
+L úyhödúökz bwhldw?nlv lów? úykk? l uöüsq?d. 
+L bwhldwd öüzckyb dybóöüuö nö öqj v?qjköd lülúé bmocnl, 
+fqjöühö bm, rwqj ?svóöv úlblúdöb, nöüö?bdhö l ckxúykd ?c lk tbmcuöüöúöd, 
+úfüyv ?ökznö úöbfüuyv. Ököú edmv lüúwccwv öqj rmüxd, ?öüj 
+?svóöv ?ökzd üödlúlb, úsh?hö, l úyhödúökz bwhldrwk cöqtdc?qfü lówdd Hsqöv?bö-böudh?vj ?öqwüómcmd. 
+Lkwv úlblúdöböúöd, ?öüjöúöd l rmüx vö? pöó üö, uöqjökkö üö. 
+L úlawdd úlblúdöböúöd pgkkö öqjnö. Ökköü l uöüsq?höü hmbw? uöüövdúök?c?d!

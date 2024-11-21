@@ -1,0 +1,73 @@
+version: '3.8'
+services:
+  convert_0:
+    image: megmerettetesdevops2024/convert_0:latest
+    container_name: convert
+    ports:
+      - "3000:3000"
+    networks:
+      - app_network
+
+  convert_1:
+    image: megmerettetesdevops2024/convert_1:latest
+    container_name: rex
+    networks:
+      - app_network
+
+  convert_2:
+    image: megmerettetesdevops2024/convert_2:latest
+    container_name: bingo
+    networks:
+      - app_network
+
+  convert_3:
+    image: megmerettetesdevops2024/convert_3:latest
+    container_name: sootie
+    networks:
+      - app_network
+
+  convert_4:
+    image: megmerettetesdevops2024/convert_4:latest
+    container_name: fido
+    networks:
+      - app_network
+
+  convert_5:
+    image: megmerettetesdevops2024/convert_5:latest
+    container_name: phoebe
+    networks:
+      - app_network
+
+  convert_6:
+    image: megmerettetesdevops2024/convert_6:latest
+    container_name: ruby
+    networks:
+      - app_network
+
+  convert_7:
+    image: megmerettetesdevops2024/convert_7:latest
+    container_name: princess
+    networks:
+      - app_network
+
+  convert_8:
+    image: megmerettetesdevops2024/convert_8:latest
+    container_name: spot
+    networks:
+      - app_network
+
+  convert_9:
+    image: megmerettetesdevops2024/convert_9:latest
+    container_name: patch
+    networks:
+      - app_network
+
+  convert_10:
+    image: megmerettetesdevops2024/convert_10:latest
+    container_name: ginger
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
