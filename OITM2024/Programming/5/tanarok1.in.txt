@@ -1,0 +1,8 @@
+music literature chemistry geography economics astronomy english physical_education philosophy computer_science environmental_science journalism drama health engineering anthropology history law
+hungarian literature law business environmental_science computer_science history physics english health art
+literature journalism biology business geography physical_education philosophy physics environmental_science
+physical_education business english law hungarian physics biology math computer_science environmental_science literature music journalism art anthropology chemistry economics philosophy engineering astronomy health geography drama
+business
+economics history biology computer_science journalism drama engineering business law anthropology music literature environmental_science health astronomy hungarian chemistry english philosophy physics art physical_education math geography
+history physical_education business engineering astronomy journalism law chemistry environmental_science english anthropology hungarian literature art physics drama math health philosophy music geography economics computer_science
+art biology geography engineering environmental_science health computer_science physics law
